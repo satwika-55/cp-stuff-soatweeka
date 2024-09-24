@@ -15,7 +15,8 @@ import re
 import math
 import threading
 import bisect
-from sortedcontainers import SortedList
+sys.stdin = open('inout.txt', 'r')
+sys.stdout = open('output.txt', 'w')
 
 # Collections and Data Structures
 from collections import Counter, defaultdict, deque
