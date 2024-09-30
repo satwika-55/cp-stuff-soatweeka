@@ -1,2 +1,1 @@
-Binary trees basic concepts . 
-codes and algorithms useful for instant use. ( for CP ) OR ( for revision ).
+code snippets of some important algorithms
