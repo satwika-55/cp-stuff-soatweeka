@@ -28,9 +28,18 @@ from collections import Counter, defaultdict, deque
 from itertools import accumulate, combinations, permutations
 from heapq import heapify, heappop, heappush, nlargest, nsmallest
 from copy import deepcopy
-
-# Functional Programming
 from functools import cmp_to_key, lru_cache, reduce
+
+# gives list of primes upto 'limit' numbers
+def sieve_of_eratosthenes(limit):
+    is_prime = [True] * (limit + 1)
+    is_prime[0] = is_prime[1] = False  # 0 and 1 are not primes
+    for num in range(2, int(limit**0.5) + 1):
+        if is_prime[num]:
+            for multiple in range(num * num, limit + 1, num):
+                is_prime[multiple] = False
+    primes = [i for i, prime in enumerate(is_prime) if prime]
+    return primes
 
 # Constants
 MOD1 = int(1e9 + 7)
