@@ -18,7 +18,7 @@ import re
 import math
 import threading
 import bisect
-#sys.stdin = open('inout.txt', 'r')
+#sys.stdin = open('input.txt', 'r')
 #sys.stdout = open('output.txt', 'w')
 
 #the above 2 statements are to be used only for VS Code while running the test cases
