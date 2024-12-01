@@ -1,6 +1,6 @@
 def sieve_of_eratosthenes(limit):
 
-    # TC : 0( Log Logn N)
+    # TC : 0( Log Log N)
     
     is_prime = [True] * (limit + 1)
     is_prime[0] = is_prime[1] = False  # 0 and 1 are not primes
