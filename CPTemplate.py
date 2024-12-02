@@ -30,7 +30,7 @@ from heapq import heapify, heappop, heappush, nlargest, nsmallest
 from copy import deepcopy
 from functools import cmp_to_key, lru_cache, reduce
 
-# gives list of primes upto 'limit' numbers
+# gives list of primes upto 'limit' numbers --- TC : O(Log Log N)
 def sieve_of_eratosthenes(limit):
     is_prime = [True] * (limit + 1)
     is_prime[0] = is_prime[1] = False  # 0 and 1 are not primes
